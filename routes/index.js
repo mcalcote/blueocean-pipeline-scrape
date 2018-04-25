@@ -7,7 +7,7 @@ const Nightmare = require('nightmare');
 const DELAY = 6000;
 
 router.get('/', (req, res) => {
-    res.render('index',  { pipelineGraph: '<h1>Pipeline API: Go to /pipeline?project=${project}&branch=${branch}&id=${id} to get pipeline data.</h1>' });
+    res.render('index',  { pipelineGraph: '<h1>Pipeline API: Go to /pipeline?host=${host}&project=${project}&branch=${branch}&id=${id} to get pipeline data.</h1>' });
 });
 
 router.get('/pipeline', (req, res) => {
